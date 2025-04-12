@@ -40,7 +40,7 @@ module.exports = {
     
             // Cấu hình email
             const mailOptions = {
-                from: 'Admin', 
+                from: 'CellPhoneX', 
                 to: email_doimk,
                 subject: 'Yêu cầu lấy lại mật khẩu',
                 text: `Mật khẩu mới của bạn là: ${newPassword}`,

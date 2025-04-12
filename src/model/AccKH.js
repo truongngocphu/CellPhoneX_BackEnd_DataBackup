@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const AccKH_Schema = new mongoose.Schema({   
         email: { type: String },
         password: { type: String,  },
-        fullName: { type: String, default: "Khắc tú"  },        
+        fullName: { type: String, default: "Ngọc Phú"  },        
         hangTV: { 
             type: String, 
             enum: ["Bạc", "Vàng", "Bạch Kim", "Kim Cương"], 

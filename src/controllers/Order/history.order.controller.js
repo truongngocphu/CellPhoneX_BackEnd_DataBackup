@@ -292,7 +292,7 @@ module.exports = {
             const sendOrderConfirmationEmail = async (toEmail) => {
                 // Tạo nội dung email với bảng sản phẩm
                 const mailOptions = {
-                    from: 'Khắc Tú',
+                    from: 'Trương Ngọc Phú ĐZ',
                     to: toEmail,
                     subject: 'Thông báo về trạng thái đơn hàng của bạn.',
                     html: `
@@ -332,7 +332,7 @@ module.exports = {
                             <p><strong>Trạng thái đơn hàng:</strong> <span style="color: ${orderStatusStyle}; font-style: italic; font-weight: bold;">${TinhTrangDonHang}</span></p>
                             <p><strong>Trạng thái thanh toán:</strong> <span style="color: ${paymentStatusStyle}; font-style: italic; font-weight: bold;">${TinhTrangThanhToan}</span></p>
                                 
-                            <p style="text-align: center; font-size: 16px;">Bạn có thể theo dõi đơn hàng tại <a href="https://shopbandodientu.dokhactu.site" style="color: #3498db; text-decoration: none;">WebShop Khắc Tú</a></p>
+                            <p style="text-align: center; font-size: 16px;">Bạn có thể theo dõi đơn hàng tại <a href="/" style="color: #3498db; text-decoration: none;">CellPhoneX</a></p>
                         </div>
                     `
                 };

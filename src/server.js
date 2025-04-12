@@ -13,6 +13,7 @@ const commentRouter = require('./routes/commentRouter');
 const hopQuaRouter = require('./routes/hopQuaRouter');
 const cauHoiRouter = require('./routes/cauHoiRouter');
 const thuegamelienhe = require('./routes/thuegamelienhe');
+const authRoutes = require('./routes/auth');
 const connectDB = require('./config/connectDB');
 const cors = require('cors');
 const multer = require('multer');
@@ -33,7 +34,7 @@ connectDB();
 
 // Cài đặt CORS
 const allowedOrigins = [
-    'http://localhost:3008', // Local development
+    'http://localhost:3010', // Local development
     'http://localhost:3009', // Local development
 ];
 
@@ -75,7 +76,8 @@ const routes = [
     { path: '/api/comment', router: commentRouter },
     { path: '/api/hopqua', router: hopQuaRouter },
     { path: '/api/cauhoi', router: cauHoiRouter },
-    // { path: '/api/lienhethuegame', router: thuegamelienhe },
+    { path: '/api/auth', router: authRoutes },
+
 ];
   
 routes.forEach(route => app.use(route.path, route.router));
@@ -127,5 +129,5 @@ app.get('/loi', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log("backend nodejs is running on the port:", port, `\n http://localhost:${port}`);
+    console.log("connect:", port, `\n http://localhost:${port}`,"hehehehe");
 });
